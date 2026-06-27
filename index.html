@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <main class="container">
+        <!-- sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-box">N</div>
+                NebaTech
+            </div>
+
+            <nav>
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+
+                <a href="#" class="active">
+                    <i class="fa-solid fa-users"></i>
+                    Students
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-book"></i>
+                    Courses
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-chart-column"></i>
+                    Reports
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    Settings
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </a>
+                
+            </nav>
+        </aside>
+
+        <!-- main content -->
+        <section class="right-layout">
+            <header>
+                <div class="page-header">
+                    <i class="fa-solid fa-bars"></i>
+                    <h2>Student Registration</h2>
+                </div>
+
+                <div class="admin-profile">
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Admin</h2>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+            </header>
+
+            <div class="student-form">
+                <h2>Add New Student</h2>
+
+                <form>
+                    <div class="input-field">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="Enter first name">
+                    </div>
+
+                    <div class="input-field">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Enter last name">
+                    </div>
+
+                    <div class="input-field">
+                        <label for="date-of-birth">Date of Birth</label>
+                        <input type="date" id="date-of-birth" placeholder="dd/mm/yyyy">
+                    </div>
+
+                    <div class="input-field">
+                        <label for="gender">Gender</label>
+                        <select id="gender">
+                            <option value="">Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter email">
+                    </div>
+
+                    <div class="input-field">
+                        <label for="phone-number">Phone Number</label>
+                        <input type="number" id="phone-number" placeholder="Enter phone number">
+                    </div>
+
+                    <div class="input-field">
+                        <label for="course">Course</label>
+                        <select id="course">
+                            <option value="">Select Course</option>
+                            <option>Computer Science</option>
+                            <option>Information technology</option>
+                            <option>Software engineering</option>
+                        </select>
+                    </div>
+
+                    <div class="input-field">
+                        <label for="admission-date">Admission Date</label>
+                        <input type="date" id="admission-date" placeholder="dd/mm/yyyy">
+                    </div>
+
+                    <div class="buttons-container">
+                        <button type="submit" class="form-btn btn-save">Save Student</button>
+                        <button type="reset" class="form-btn btn-reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Table list-->
+            <div class="table-container">
+                <h1>Student List</h1>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Course</th>
+                            <th>Admission Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ahmed</td>
+                            <td>Ali</td>
+                            <td>ahmed@example.com</td>
+                            <td>0242345678</td>
+                            <td>Computer Science</td>
+                            <td>01/05/2024</td>
+                            <td>
+                                <div class="buttons-container">
+                                    <button class="btn btn-edit">Edit</button>
+                                    <button class="btn btn-danger">Delete</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy; 2024 NebaTech. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
