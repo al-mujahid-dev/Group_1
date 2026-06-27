@@ -180,3 +180,39 @@ select:focus {
     background-color: white;
     color: #000;
 }
+.student-table {
+   width: 100%;
+    border-collapse: collapse;
+    font-family: "Segoe UI", sans-serif;
+}
+.student-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    background-color: white;
+}
+.student-table th {
+    border: 1px solid #ddd;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    padding: 10px;
+    text-align: left;
+} 
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.btn-edit {
+    color: rgb(76, 12, 253);
+    border: 0;
+}
+.btn-danger {
+    color: rgb(253, 12, 12);
+    border: 0;
+
+}
