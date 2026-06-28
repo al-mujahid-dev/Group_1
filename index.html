@@ -66,202 +66,197 @@
                 </div>
             </header>
 
-            <div class="student-form">
-                <h2>Add New Student</h2>
+            <div class="details">
 
-                <form>
-                    <div class="input-field">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" placeholder="Enter first name">
-                    </div>
+                <div class="student-form">
+                    <h2>Add New Student</h2>
 
-                    <div class="input-field">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" placeholder="Enter last name">
-                    </div>
+                    <form>
+                        <div class="input-field">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" placeholder="Enter first name">
+                        </div>
 
-                    <div class="input-field">
-                        <label for="date-of-birth">Date of Birth</label>
-                        <input type="date" id="date-of-birth" placeholder="dd/mm/yyyy">
-                    </div>
+                        <div class="input-field">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" placeholder="Enter last name">
+                        </div>
 
-                    <div class="input-field">
-                        <label for="gender">Gender</label>
-                        <select id="gender">
-                            <option value="">Select Gender</option>
-                            <option>Male</option>
-                            <option>Female</option>
-                        </select>
-                    </div>
+                        <div class="input-field">
+                            <label for="date-of-birth">Date of Birth</label>
+                            <input type="date" id="date-of-birth" placeholder="dd/mm/yyyy">
+                        </div>
 
-                    <div class="input-field">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Enter email">
-                    </div>
+                        <div class="input-field">
+                            <label for="gender">Gender</label>
+                            <select id="gender">
+                                <option value="">Select Gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
 
-                    <div class="input-field">
-                        <label for="phone-number">Phone Number</label>
-                        <input type="number" id="phone-number" placeholder="Enter phone number">
-                    </div>
+                        <div class="input-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Enter email">
+                        </div>
 
-                    <div class="input-field">
-                        <label for="course">Course</label>
-                        <select id="course">
-                            <option value="">Select Course</option>
-                            <option>Computer Science</option>
-                            <option>Information technology</option>
-                            <option>Software engineering</option>
-                            <option>Data Science</option>
-                            <option>Cyber Security</option>
-                            <option>Forensic Science</option>
-                        </select>
-                    </div>
+                        <div class="input-field">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="tel" id="phone-number" placeholder="Enter phone number">
+                        </div>
 
-                    <div class="input-field">
-                        <label for="admission-date">Admission Date</label>
-                        <input type="date" id="admission-date" placeholder="dd/mm/yyyy">
-                    </div>
+                        <div class="input-field">
+                            <label for="course">Course</label>
+                            <select id="course">
+                                <option value="">Select Course</option>
+                                <option>Computer Science</option>
+                                <option>Information technology</option>
+                                <option>Software engineering</option>
+                                <option>Data Science</option>
+                                <option>Cyber Security</option>
+                                <option>Forensic Science</option>
+                            </select>
+                        </div>
 
-                    <div class="buttons-container">
-                        <button type="submit" class="form-btn btn-save">Save Student</button>
-                        <button type="reset" class="form-btn btn-reset">Reset</button>
-                    </div>
-                </form>
+                        <div class="input-field">
+                            <label for="admission-date">Admission Date</label>
+                            <input type="date" id="admission-date" placeholder="dd/mm/yyyy">
+                        </div>
+
+                        <div class="buttons-container">
+                            <button type="submit" class="form-btn btn-save">Save Student</button>
+                            <button type="reset" class="form-btn btn-reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Table list-->
+                <div class="table-container">
+                    <h1>Student List</h1>
+                    <table class="student-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Phone Number</th>
+                                <th>Course</th>
+                                <th>Admission Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Ahmed</td>
+                                <td>Ali</td>
+                                <td>ahmed@example.com</td>
+                                <td>0242345678</td>
+                                <td>Computer Science</td>
+                                <td>01/05/2024</td>
+                                <td>
+                                    <div class="buttons-container">
+                                        <button class="table-btn btn-edit">Edit</button>
+                                        <button class="table-btn btn-danger">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Hamdu</td>
+                                <td>Yussif</td>
+                                <td>yussif@example.com</td>
+                                <td>0542345678</td>
+                                <td>Information Technology</td>
+                                <td>01/05/2024</td>
+                                <td> 
+                                    <div class="buttons-container">
+                                        <button class="table-btn btn-edit">Edit</button>
+                                        <button class="table-btn btn-danger">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Naporo</td>
+                                <td>Alhassan</td>
+                                <td>alhassan@example.com</td>
+                                <td>0592345678</td>
+                                <td>Software Engineering</td>
+                                <td>01/05/2024</td>
+                                <td>
+                                    <div class="buttons-container">
+                                        <button class="table-btn btn-edit">Edit</button>
+                                        <button class="table-btn btn-danger">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Yussif</td>
+                                <td>Michael</td>
+                                <td>michael@example.com</td>
+                                <td>0252345678</td>
+                                <td>Data Science</td>
+                                <td>09/05/2024</td>
+                                <td>
+                                    <div class="buttons-container">
+                                        <button class="table-btn btn-edit">Edit</button>
+                                        <button class="table-btn btn-danger">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>5</td>
+                                <td>Fuseini</td>
+                                <td>Huzeeima</td>
+                                <td>huzeeima@example.com</td>
+                                <td>05921445678</td>
+                                <td>Cyber SEcurity</td>
+                                <td>01/06/2024</td>
+                                <td>
+                                    <div class="buttons-container">
+                                        <button class="table-btn btn-edit">Edit</button>
+                                        <button class="table-btn btn-danger">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>6</td>
+                                <td>Sabnaa</td>
+                                <td>Deedat</td>
+                                <td>sabnaa@example.com</td>
+                                <td>0209545678</td>
+                                <td>Forensic Science</td>
+                                <td>03/05/2024</td>
+                                <td>
+                                    <div class="buttons-container">
+                                        <button class="table-btn btn-edit">Edit</button>
+                                        <button class="table-btn btn-danger">Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
             </div>
 
-            <!-- Table list-->
-            <div class="table-container">
-                <h1>Student List</h1>
-                <table class="student-table">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Email</th>
-                            <th>Phone Number</th>
-                            <th>Course</th>
-                            <th>Admission Date</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
+            <!-- footer -->
+            <footer>
+                <p>&copy; 2024 NebaTech. All rights reserved.</p>
+            </footer>
 
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Ahmed</td>
-                            <td>Ali</td>
-                            <td>ahmed@example.com</td>
-                            <td>0242345678</td>
-                            <td>Computer Science</td>
-                            <td>01/05/2024</td>
-                            <td>
-                                <div class="buttons-container">
-                                    <button class="btn btn-edit">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
-                         <tr>
-                            <td>1</td>
-                            <td>Ahmed</td>
-                            <td>Ali</td>
-                            <td>ahmed@example.com</td>
-                            <td>0242345678</td>
-                            <td>Computer Science</td>
-                            <td>01/05/2024</td>
-                            <td>
-                                <div class="buttons-container">
-                                    <button class="btn btn-edit">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
-                         <tr>
-                            <td>2</td>
-                            <td>Hamdu</td>nam</td>
-                            <td>Yussif</td>
-                            <td>Yussif@example.com</td>
-                            <td>0542345678</td>
-                            <td>Information Technology</td>
-                            <td>01/05/2024</td>
-                            <td>
-                                <div class="buttons-container">
-                                    <button class="btn btn-edit">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
-                         <tr>
-                            <td>3</td>
-                            <td>Naporo</td>
-                            <td>Alhassan</td>
-                            <td>Alhassan@example.com</td>
-                            <td>0242345678</td>
-                            <td>Software Engineering</td>
-                            <td>01/05/2024</td>
-                            <td>
-                                <div class="buttons-container">
-                                    <button class="btn btn-edit">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
-                         <tr>
-                            <td>4</td>
-                            <td>Yussif</td>
-                            <td>Michael</td>
-                            <td>Michael@example.com</td>
-                            <td>0242345678</td>
-                            <td>Data Science</td>
-                            <td>09/05/2024</td>
-                            <td>
-                                <div class="buttons-container">
-                                    <button class="btn btn-edit">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
-                         <tr>
-                            <td>5</td>
-                            <td>Fuseini</td>
-                            <td>Huzeeima</td>
-                            <td>huzeeima@example.com</td>
-                            <td>05921445678</td>
-                            <td>Cyber SEcurity</td>
-                            <td>01/06/2024</td>
-                            <td>
-                                <div class="buttons-container">
-                                    <button class="btn btn-edit">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
-                         <tr>
-                            <td>6</td>
-                            <td>Sabnaa</td>
-                            <td>Deedat</td>
-                            <td>sabnaa@example.com</td>
-                            <td>0209545678</td>
-                            <td>Forensic Science</td>
-                            <td>03/05/2024</td>
-                            <td>
-                                <div class="buttons-container">
-                                    <button class="btn btn-edit">Edit</button>
-                                    <button class="btn btn-danger">Delete</button>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
         </section>
     </main>
-
-    <!-- footer -->
-    <footer>
-        <p>&copy; 2024 NebaTech. All rights reserved.</p>
-    </footer>
     
 </body>
 </html>

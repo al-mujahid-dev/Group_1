@@ -7,12 +7,12 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     background-color: #f0f0f0;
+    height: 100vh;
 }
 
 .container {
     display: grid;
-    grid-template-columns: 230px 1fr;
-    gap: 15px;
+    grid-template-columns: 220px 1fr;
     min-height: 100vh;
 }
 
@@ -22,13 +22,14 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 20px;
 }
 
@@ -93,7 +94,7 @@ header {
 .admin-profile {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     color: white;
 }
 
@@ -111,13 +112,20 @@ header {
     font-weight: bold;
 }
 
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
 /* ---------------------------- Add New Student Form --------------------------*/
 .student-form {
-    width: 100%;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    margin-top: 15px;
     padding: 10px;
+    background-color: white;
+    width: 100%;
 }
 
 .student-form h2 {
@@ -151,10 +159,9 @@ select:focus {
 }
 
 /*----------------- Buttons styling -----------------*/
-
 .buttons-container {
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 
 .form-btn {
@@ -180,39 +187,81 @@ select:focus {
     background-color: white;
     color: #000;
 }
-.student-table {
-   width: 100%;
-    border-collapse: collapse;
-    font-family: "Segoe UI", sans-serif;
-}
-.student-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-    background-color: white;
-}
-.student-table th {
-    border: 1px solid #ddd;
-    background-color: rgb(245, 245, 245);
-    color: black;
+
+/* --------------------------- Table ---------------------------*/
+.table-container {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
     padding: 10px;
+    background-color: white;
+    width: 100%;
+}
+
+.table-container h1 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.student-table td {
+    padding: 5px 10px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.student-table th {
+    background-color: #ddd;
+    color: black;
+    padding: 6px 12px;
     text-align: left;
 } 
+
+.student-table th, 
+.student-table td {
+    border-bottom: 1px solid #ccc;
+}
+
+.student-table tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.student-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
 footer {
     background-color: navy;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
 }
+
+.table-btn {
+    border: none;
+    outline: none;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.table-btn:hover {
+    text-decoration: underline;
+}
+
 .btn-edit {
     color: rgb(76, 12, 253);
-    border: 0;
 }
+
 .btn-danger {
     color: rgb(253, 12, 12);
-    border: 0;
-
 }
